@@ -1,0 +1,105 @@
+/* regole generali */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* blocco header */
+#barra-navigazione {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: solid 1px #efefef;
+}
+
+/* logo sinistra */
+#barra-navigazione img {
+  height: 40px;
+}
+
+/* navigazione header destra */
+#navigazione ul {
+  display: flex;
+  align-items: center;
+}
+
+#navigazione ul li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+#navigazione ul li a {
+  text-decoration: none;
+  color: #565A5C;
+}
+
+nav ul #iscriviti {
+  padding: 10px 20px;
+  background-color: #E78D5C;
+  margin-right: 20px;
+}
+
+nav ul #iscriviti a {
+  color: white;
+}
+
+/* hamburgher */
+#hamburgher {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #2B3F58;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#hamburgher ul li a {
+  color: white;
+  font-size: 25px;
+}
+
+#hamburgher ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#hamburgher ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#icona-menu-hamburger {
+  color: lightgrey;
+  font-size: 20px;
+  display: none;
+}
+
+#chiudi-hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  /* navigazione estesa */
+  #navigazione {
+    display: none;
+  }
+
+  /* hamburger */
+  #icona-menu-hamburger {
+    display: block;
+  }
+}
