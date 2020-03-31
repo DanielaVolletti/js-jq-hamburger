@@ -15,10 +15,11 @@ iconaHamburger.click(
   function() {
     menuHamburger.fadeIn();
   }
-)
+);
+
 // quando clicco sulla x, chiudo il menu
 close.click(
   function() {
     menuHamburger.fadeOut();
   }
-)
+);
